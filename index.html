@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience exceptional flavors in an elegant setting at RAMNAM restaurant. View our menu, make reservations, and get in touch with us.">
+    <meta name="author" content="Engr. Omanito">
+    <title>RAMNAM Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        
+      
+        .navbar-custom {
+            background-color: #03080e;
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-toggler {
+            border: none;
+            background-color: whitesmoke;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            padding: 0.5rem;
+            outline: none;
+            transition: transform 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #e74c3c; /* Change to the desired hover color */
+        }
+
+        .navbar-toggler-icon {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: rgb(0, 0, 0);
+            margin: 5px auto;
+            transition: all 0.3s;
+        }
+
+
+        .navbar-toggler.collapsed .navbar-toggler-icon {
+            transform: rotate(0deg);
+        }
+
+        .navbar-toggler.collapsed .navbar-toggler-icon.line-1 {
+            transform: translateY(0px) rotate(45deg);
+        }
+
+        .navbar-toggler.collapsed .navbar-toggler-icon.line-2 {
+            opacity: 0;
+        }
+
+        .navbar-toggler.collapsed .navbar-toggler-icon.line-3 {
+            transform: translateY(0px) rotate(-45deg);
+        }
+        /* Center navigation links and search button */
+        .navbar-nav .nav-link,
+        .search-button {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    
+        /* Center the search input field */
+        .fancy-search {
+            text-align: center;
+        }
+    
+        .search-input {
+            display: block;
+            margin: 0 auto;
+        }
+    
+        /* Resize GIF for mobile devices */
+        .noodles-gif {
+            width: 100px;
+            height: 100px;
+        }
+    
+        /* Center logo on mobile devices */
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px; /* Adjust as needed */
+        }
+        .fancy-search {
+            display: none;
+        }
+
+        @media screen and (orientation: landscape) {
+            .intro h1 {
+                font-size: 3rem; /* Adjust the font size */
+            }
+        
+            .intro p {
+                font-size: 1.25rem; /* Adjust the font size */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .intro h1 {
+                font-size: 2rem;
+            }
+
+            .intro p {
+                font-size: 1rem;
+            }
+
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+
+            .navbar-nav .nav-link {
+                font-size: 1rem;
+            }
+
+            .intro h1 span {
+                white-space: nowrap;
+            }
+
+            /* Resize GIF for mobile devices */
+            .noodles-gif {
+                width: 100px;
+                height: 100px;
+            }
+            
+
+            /* Center logo on mobile devices */
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px; /* Adjust as needed */
+            }
+            .search-input {
+                display: block;
+                margin: 0 auto;
+                padding: 8px 16px;
+                border: 1px solid #e74c3c;
+                border-radius: 4px;
+                font-size: 16px;
+                width: 200px; /* Adjust as needed */
+            }
+            
+            /* Style for the search button */
+            .search-button {
+                background-color: #e74c3c;
+                color: white;
+                border: none;
+                padding: 8px 16px;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background-color 0.3s ease;
+            }
+            
+            .search-button:hover {
+                background-color: #c0392b;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="logo">
+                <img src="noodles.gif" alt="Noodles" class="noodles-gif clickable" style="width: 40px; height: 40px;">
+            </div>
+            <a class="navbar-brand" href="#">R A M N A M</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Reservations.html">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact-link" href="Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                </ul>
+                <div class="fancy-search">
+                    <input type="text" class="search-input" name="q" placeholder="Search for dishes...">
+                    <button class="search-button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </nav>
+        <div class="intro fade-in">
+            <div class="intro-content">
+                <h1>Welcome to <span class="intro-logo">
+                    <span class="zoom">R</span>
+                    <span class="zoom move-letter">A</span>
+                    <span class="zoom move-letter">M</span>
+                    <span class="zoom move-letter">N</span>
+                    <span class="zoom move-letter">A</span>
+                    <span class="zoom move-letter">M</span>
+                </span></h1>
+                <p class="intro-text">Experience exceptional flavors in an elegant setting</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2023 RAMNAM - La Union</p>
+    </footer>
+    <script src="animation.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
